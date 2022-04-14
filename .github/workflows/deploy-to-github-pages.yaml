@@ -14,6 +14,8 @@ jobs:
       
       - name: Setup flutter
         uses: subosito/flutter-action@v2
+        with:
+          channel: 'master'
 
       - name: Build 🔧
         run: |
