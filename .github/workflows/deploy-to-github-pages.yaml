@@ -18,7 +18,7 @@ jobs:
       - name: Build 🔧
         run: |
           flutter pub get
-          flutter build web
+          flutter build web --base-href /flutter_autofill_test/
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4
