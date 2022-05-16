@@ -3,17 +3,9 @@
 Flutter stable
 - iOS
   - Email focused: works
-  - Password focused: only email filled
+  - Password focused: works
 - Android
   - Email focused: only email filled
   - Password focused: autofill popup does not show up
 - Web
   - Does not work
-
-Flutter master
-- iOS
-  - Same
-- Android
-  - Same
-- Web
-  - Same
