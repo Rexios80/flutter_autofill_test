@@ -34,7 +34,9 @@ void main() {
                 child: const Text('Clear'),
               ),
               const SizedBox(height: 16),
-              const Text('Built with Flutter $kFlutterFrameworkVersion')
+              const Text(
+                'Built with Flutter channel $kFlutterChannel version $kFlutterFrameworkVersion',
+              )
             ],
           ),
         ),
