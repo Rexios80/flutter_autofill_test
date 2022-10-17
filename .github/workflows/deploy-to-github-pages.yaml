@@ -18,6 +18,7 @@ jobs:
       - name: Build 🔧
         run: |
           flutter pub get
+          dart run tool/generate_constants.dart
           flutter build web --base-href /flutter_autofill_test/
 
       - name: Deploy 🚀

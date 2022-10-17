@@ -1,0 +1,9 @@
+const kFlutterFrameworkVersion = "3.3.3";
+const kFlutterChannel = "stable";
+const kFlutterRepositoryUrl = "https://github.com/flutter/flutter.git";
+const kFlutterFrameworkRevision = "18a827f3933c19f51862dde3fa472197683249d6";
+const kFlutterFrameworkCommitDate = "2022-09-28 10:03:14 -0700";
+const kFlutterEngineRevision = "5c984c26ebc4a0a8897305d3c6bef70ced91090d";
+const kFlutterDartSdkVersion = "2.18.2";
+const kFlutterDevToolsVersion = "2.15.0";
+const kFlutterFlutterRoot = "/Users/rexios/dev/fvm/versions/stable";
