@@ -6,7 +6,7 @@ void main() async {
   final result = await Process.run('flutter', ['--version']);
   final declarations = constantDeclarationsFromMap({
     'flutterInfo': result.stdout.replaceAll('\n', '\\n'),
-    'buildDate': DateTime.now().toIso8601String(),
+    'buildDate': DateTime.now().millisecondsSinceEpoch,
   }).join('\n');
   File('lib/constants.dart').writeAsStringSync(declarations);
 }
@@ -21,6 +21,17 @@ Iterable<String> constantDeclarationsFromMap(
   String constantName(String name, String prefix) =>
       prefix.isEmpty ? name : prefix + capitalize(name);
 
-  return map.entries
-      .map((e) => "const ${constantName(e.key, prefix)} = '${e.value}';");
+  dynamic formatValue(dynamic value) {
+    if (value is String) {
+      return "'$value'";
+    } else if (value is num) {
+      return value;
+    } else {
+      throw ArgumentError('Unsupported value type: ${value.runtimeType}');
+    }
+  }
+
+  return map.entries.map(
+    (e) => 'const ${constantName(e.key, prefix)} = ${formatValue(e.value)};',
+  );
 }

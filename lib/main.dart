@@ -37,7 +37,7 @@ void main() {
               ),
               const SizedBox(height: 16),
               const Text(kFlutterInfo),
-              Text('Built ${GetTimeAgo.parse(DateTime.parse(kBuildDate))}\n'),
+              Text('Built ${GetTimeAgo.parse(DateTime.fromMillisecondsSinceEpoch(kBuildDate))}\n'),
               Row(
                 children: const [
                   Text('View app built with Flutter channel '),
