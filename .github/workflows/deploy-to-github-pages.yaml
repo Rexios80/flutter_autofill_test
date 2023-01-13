@@ -23,7 +23,7 @@ jobs:
         run: |
           brew tap leoafarias/fvm
           brew install fvm
-          export PATH="$PATH:$HOME/fvm/default/bin"
+          export PATH="$PATH:/home/runner/fvm/default/bin"
           fvm install stable
           fvm install beta
           fvm install master
