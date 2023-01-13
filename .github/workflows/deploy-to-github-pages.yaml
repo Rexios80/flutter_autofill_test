@@ -31,22 +31,13 @@ jobs:
           echo "$HOME/fvm/default/bin" >> $GITHUB_PATH
 
       - name: Build stable 🔧
-        run: |
-          fvm install stable
-          fvm global stable
-          tool/build.sh stable
+        run: tool/build.sh stable
       
       - name: Build beta 🔧
-        run: |
-          fvm install beta
-          fvm global beta
-          tool/build.sh beta
+        run: tool/build.sh beta
       
       - name: Build master 🔧
-        run: |
-          fvm install master
-          fvm global master
-          tool/build.sh master
+        run: tool/build.sh master
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4
