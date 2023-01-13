@@ -1,4 +1,4 @@
-fvm install $1 --skip-setup
+fvm install $1
 fvm global $1
 flutter pub get
 dart run tool/generate_constants.dart
