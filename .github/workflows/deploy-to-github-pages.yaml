@@ -8,6 +8,10 @@ on:
     # Every Sunday at midnight
     - cron: "0 0 * * 0"
 
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
 jobs:
   build-and-deploy:
     concurrency: ci-${{ github.ref }} # Recommended if you intend to make multiple deployments in quick succession.
@@ -24,22 +28,22 @@ jobs:
           brew tap leoafarias/fvm
           brew install fvm
           export PATH="$PATH:/home/runner/fvm/default/bin"
-          fvm install stable
-          fvm install beta
-          fvm install master
 
       - name: Build stable 🔧
         run: |
+          fvm install stable
           fvm global stable
           tool/build.sh stable
       
       - name: Build beta 🔧
         run: |
+          fvm install beta
           fvm global beta
           tool/build.sh beta
       
       - name: Build master 🔧
         run: |
+          fvm install master
           fvm global master
           tool/build.sh master
 
