@@ -27,7 +27,6 @@ jobs:
         run: |
           brew tap leoafarias/fvm
           brew install fvm
-          echo "$HOME/fvm/default/bin"
           echo "$HOME/fvm/default/bin" >> $GITHUB_PATH
 
       - name: Build stable 🔧
