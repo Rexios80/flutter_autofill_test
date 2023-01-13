@@ -12,57 +12,61 @@ void main() {
     MaterialApp(
       home: Scaffold(
         appBar: AppBar(title: const Text('Autofill Test')),
-        body: AutofillGroup(
-          child: ListView(
-            padding: const EdgeInsets.all(16),
-            children: [
-              TextField(
-                controller: emailController,
-                autofillHints: const [AutofillHints.email],
-                decoration: const InputDecoration(labelText: 'Email'),
+        body: ListView(
+          padding: const EdgeInsets.all(16),
+          children: [
+            AutofillGroup(
+              child: Column(
+                children: [
+                  TextField(
+                    controller: emailController,
+                    autofillHints: const [AutofillHints.email],
+                    decoration: const InputDecoration(labelText: 'Email'),
+                  ),
+                  const SizedBox(height: 16),
+                  TextField(
+                    controller: passwordController,
+                    autofillHints: const [AutofillHints.password],
+                    decoration: const InputDecoration(labelText: 'Password'),
+                    obscureText: true,
+                  ),
+                ],
               ),
+            ),
+            const SizedBox(height: 16),
+            ElevatedButton(
+              onPressed: () {
+                emailController.clear();
+                passwordController.clear();
+              },
+              child: const Text('Clear'),
+            ),
+            if (kIsWeb) ...[
               const SizedBox(height: 16),
-              TextField(
-                controller: passwordController,
-                autofillHints: const [AutofillHints.password],
-                decoration: const InputDecoration(labelText: 'Password'),
-                obscureText: true,
+              const Text(kFlutterInfo),
+              Text(
+                'Built ${GetTimeAgo.parse(DateTime.fromMillisecondsSinceEpoch(kBuildDate))}\n',
               ),
-              const SizedBox(height: 16),
-              ElevatedButton(
-                onPressed: () {
-                  emailController.clear();
-                  passwordController.clear();
-                },
-                child: const Text('Clear'),
-              ),
-              if (kIsWeb) ...[
-                const SizedBox(height: 16),
-                const Text(kFlutterInfo),
-                Text(
-                  'Built ${GetTimeAgo.parse(DateTime.fromMillisecondsSinceEpoch(kBuildDate))}\n',
-                ),
-                Row(
-                  children: const [
-                    Text('View app built with Flutter channel '),
-                    LinkButton(label: 'stable', url: '../stable'),
-                    Text('/'),
-                    LinkButton(label: 'beta', url: '../beta'),
-                    Text('/'),
-                    LinkButton(label: 'master', url: '../master'),
-                  ],
-                ),
-              ],
-              const SizedBox(height: 16),
-              const Align(
-                alignment: Alignment.centerLeft,
-                child: LinkButton(
-                  label: 'View repository',
-                  url: 'https://github.com/Rexios80/flutter_autofill_test',
-                ),
+              Row(
+                children: const [
+                  Text('View app built with Flutter channel '),
+                  LinkButton(label: 'stable', url: '../stable'),
+                  Text('/'),
+                  LinkButton(label: 'beta', url: '../beta'),
+                  Text('/'),
+                  LinkButton(label: 'master', url: '../master'),
+                ],
               ),
             ],
-          ),
+            const SizedBox(height: 16),
+            const Align(
+              alignment: Alignment.centerLeft,
+              child: LinkButton(
+                label: 'View repository',
+                url: 'https://github.com/Rexios80/flutter_autofill_test',
+              ),
+            ),
+          ],
         ),
       ),
     ),
