@@ -49,7 +49,7 @@ void main() {
               ),
               Row(
                 children: const [
-                  Text('View app built with Flutter channel '),
+                  Text('View app built with Flutter channel'),
                   LinkButton(label: 'stable', url: '../stable'),
                   Text('/'),
                   LinkButton(label: 'beta', url: '../beta'),
