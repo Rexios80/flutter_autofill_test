@@ -1,4 +1,5 @@
 import 'package:autofill_test/constants.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:get_time_ago/get_time_ago.dart';
 import 'package:url_launcher/url_launcher_string.dart';
@@ -35,19 +36,23 @@ void main() {
                 },
                 child: const Text('Clear'),
               ),
-              const SizedBox(height: 16),
-              const Text(kFlutterInfo),
-              Text('Built ${GetTimeAgo.parse(DateTime.fromMillisecondsSinceEpoch(kBuildDate))}\n'),
-              Row(
-                children: const [
-                  Text('View app built with Flutter channel '),
-                  ChannelButton(channel: 'stable'),
-                  Text('/'),
-                  ChannelButton(channel: 'beta'),
-                  Text('/'),
-                  ChannelButton(channel: 'master'),
-                ],
-              ),
+              if (kIsWeb) ...[
+                const SizedBox(height: 16),
+                const Text(kFlutterInfo),
+                Text(
+                  'Built ${GetTimeAgo.parse(DateTime.fromMillisecondsSinceEpoch(kBuildDate))}\n',
+                ),
+                Row(
+                  children: const [
+                    Text('View app built with Flutter channel '),
+                    ChannelButton(channel: 'stable'),
+                    Text('/'),
+                    ChannelButton(channel: 'beta'),
+                    Text('/'),
+                    ChannelButton(channel: 'master'),
+                  ],
+                ),
+              ],
             ],
           ),
         ),
