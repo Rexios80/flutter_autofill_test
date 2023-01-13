@@ -4,6 +4,9 @@ on:
   push:
     branches:
       - master
+  schedule:
+    # Every Sunday at midnight
+    - cron: "0 0 * * 0"
 
 jobs:
   build-and-deploy:
@@ -12,18 +15,33 @@ jobs:
     steps:
       - name: Checkout 🛎️
         uses: actions/checkout@v3
-      
-      - name: Setup flutter
-        uses: subosito/flutter-action@v2
 
-      - name: Build 🔧
+      - name: Set up Homebrew
+        uses: Homebrew/actions/setup-homebrew@master
+
+      - name: Install FVM
         run: |
-          flutter pub get
-          dart run tool/generate_constants.dart
-          flutter build web --base-href /flutter_autofill_test/
+          brew tap leoafarias/fvm
+          brew install fvm
+          export PATH="$PATH:$HOME/fvm/default/bin"
+
+      - name: Build stable 🔧
+        run: |
+          fvm channel stable
+          tool/build.sh stable
+      
+      - name: Build beta 🔧
+        run: |
+          fvm channel beta
+          tool/build.sh beta
+      
+      - name: Build master 🔧
+        run: |
+          fvm channel master
+          tool/build.sh master
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           branch: gh-pages
-          folder: build/web
+          folder: built

@@ -1,17 +1,13 @@
 /// Based on https://stackoverflow.com/a/63417082/8174191
 
 import 'dart:io';
-import 'dart:convert';
 
 void main() async {
-  final result = await Process.run('flutter', ['--version', '--machine']);
-  final json = jsonDecode(result.stdout);
-  final declarations = [
-    ...constantDeclarationsFromMap(json, 'kFlutter'),
-    ...constantDeclarationsFromMap({
-      'buildDate': DateTime.now().toIso8601String(),
-    })
-  ].join('\n');
+  final result = await Process.run('flutter', ['--version']);
+  final declarations = constantDeclarationsFromMap({
+    'flutterInfo': result.stdout.replaceAll('\n', '\\n'),
+    'buildDate': DateTime.now().toIso8601String(),
+  }).join('\n');
   File('lib/constants.dart').writeAsStringSync(declarations);
 }
 

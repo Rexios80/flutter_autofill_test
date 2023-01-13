@@ -9,6 +9,9 @@ dependencies:
   flutter:
     sdk: flutter
 
+  get_time_ago: ^1.2.1
+  url_launcher: ^6.1.7
+
 dev_dependencies:
   flutter_test:
     sdk: flutter

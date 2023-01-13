@@ -1,10 +1,2 @@
-const kFlutterFrameworkVersion = '3.3.10';
-const kFlutterChannel = 'stable';
-const kFlutterRepositoryUrl = 'https://github.com/flutter/flutter.git';
-const kFlutterFrameworkRevision = '135454af32477f815a7525073027a3ff9eff1bfd';
-const kFlutterFrameworkCommitDate = '2022-12-15 07:36:55 -0800';
-const kFlutterEngineRevision = '3316dd8728419ad3534e3f6112aa6291f587078a';
-const kFlutterDartSdkVersion = '2.18.6';
-const kFlutterDevToolsVersion = '2.15.0';
-const kFlutterFlutterRoot = '/Users/rexios/dev/fvm/versions/stable';
-const kBuildDate = '2023-01-13T12:44:03.828719';
+const kFlutterInfo = 'Flutter 3.3.10 • channel stable • https://github.com/flutter/flutter.git\nFramework • revision 135454af32 (4 weeks ago) • 2022-12-15 07:36:55 -0800\nEngine • revision 3316dd8728\nTools • Dart 2.18.6 • DevTools 2.15.0\n';
+const kBuildDate = '2023-01-13T13:11:47.078706';
