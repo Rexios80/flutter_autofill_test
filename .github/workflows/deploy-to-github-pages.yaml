@@ -24,20 +24,23 @@ jobs:
           brew tap leoafarias/fvm
           brew install fvm
           export PATH="$PATH:$HOME/fvm/default/bin"
+          fvm install stable
+          fvm install beta
+          fvm install master
 
       - name: Build stable 🔧
         run: |
-          fvm channel stable
+          fvm global stable
           tool/build.sh stable
       
       - name: Build beta 🔧
         run: |
-          fvm channel beta
+          fvm global beta
           tool/build.sh beta
       
       - name: Build master 🔧
         run: |
-          fvm channel master
+          fvm global master
           tool/build.sh master
 
       - name: Deploy 🚀
