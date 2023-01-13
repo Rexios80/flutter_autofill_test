@@ -45,14 +45,22 @@ void main() {
                 Row(
                   children: const [
                     Text('View app built with Flutter channel '),
-                    ChannelButton(channel: 'stable'),
+                    LinkButton(label: 'stable', url: '../stable'),
                     Text('/'),
-                    ChannelButton(channel: 'beta'),
+                    LinkButton(label: 'beta', url: '../beta'),
                     Text('/'),
-                    ChannelButton(channel: 'master'),
+                    LinkButton(label: 'master', url: '../master'),
                   ],
                 ),
               ],
+              const SizedBox(height: 16),
+              const Align(
+                alignment: Alignment.centerLeft,
+                child: LinkButton(
+                  label: 'View repository',
+                  url: 'https://github.com/Rexios80/flutter_autofill_test',
+                ),
+              ),
             ],
           ),
         ),
@@ -61,16 +69,17 @@ void main() {
   );
 }
 
-class ChannelButton extends StatelessWidget {
-  final String channel;
+class LinkButton extends StatelessWidget {
+  final String label;
+  final String url;
 
-  const ChannelButton({super.key, required this.channel});
+  const LinkButton({super.key, required this.label, required this.url});
 
   @override
   Widget build(BuildContext context) {
     return TextButton(
-      onPressed: () => launchUrlString('../$channel'),
-      child: Text(channel),
+      onPressed: () => launchUrlString(url),
+      child: Text(label),
     );
   }
 }
