@@ -3,27 +3,27 @@ const MANIFEST = 'flutter-app-manifest';
 const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 const RESOURCES = {
-  "favicon.png": "5dcef449791fa27946b3d35ad8803796",
+  "flutter.js": "1cfe996e845b3a8a33f57607e8b09ee4",
+"index.html": "bd3a1fdfabb190198a56760da5009bf6",
+"/": "bd3a1fdfabb190198a56760da5009bf6",
+"main.dart.js": "7c423fe8936a8110e92283eb3b835c0d",
 "manifest.json": "7c948dc373c09c01a0888540d7c91bae",
-"flutter.js": "1cfe996e845b3a8a33f57607e8b09ee4",
-"icons/Icon-maskable-192.png": "c457ef57daa1d16f64b27b786ec2ea3c",
-"icons/Icon-maskable-512.png": "301a7604d45b3e739efc881eb04896ea",
+"favicon.png": "5dcef449791fa27946b3d35ad8803796",
 "icons/Icon-512.png": "96e752610906ba2a93c65f8abe1645f1",
+"icons/Icon-maskable-512.png": "301a7604d45b3e739efc881eb04896ea",
+"icons/Icon-maskable-192.png": "c457ef57daa1d16f64b27b786ec2ea3c",
 "icons/Icon-192.png": "ac9a721a12bbc803b44f645561ecb1e1",
-"version.json": "dae5d4c273ccebccb7c8db4957563aad",
-"main.dart.js": "be889e100a86d4bed604797d75bd9549",
-"canvaskit/canvaskit.js": "678d9f53b0e5c5f22543631f43279fb9",
-"canvaskit/profiling/canvaskit.js": "5a0f05139f1d43c603dcfc67d15b1ec9",
-"canvaskit/profiling/canvaskit.wasm": "09aacbc0d8b20c7ee684e310703e2d86",
-"canvaskit/canvaskit.wasm": "6972cd6e8f48c5f3c027416c7b2443a6",
-"index.html": "447a712cfafffeb27e31fc285cdfccd0",
-"/": "447a712cfafffeb27e31fc285cdfccd0",
-"assets/AssetManifest.json": "99914b932bd37a50b983c5e7c90ae93b",
-"assets/AssetManifest.bin": "0b0a3415aad49b6e9bf965ff578614f9",
+"assets/FontManifest.json": "7b2a36307916a9721811788013e65289",
+"assets/NOTICES": "9b4a3dd7fd1deb4b102a11b9531656f7",
 "assets/fonts/MaterialIcons-Regular.otf": "d1ced889c71be26d4d14152c2c0234f4",
+"assets/AssetManifest.bin": "0b0a3415aad49b6e9bf965ff578614f9",
 "assets/shaders/ink_sparkle.frag": "92666cc97576adbea2e2d3061a953137",
-"assets/NOTICES": "284d536e60e415d1801683823a3aeefe",
-"assets/FontManifest.json": "7b2a36307916a9721811788013e65289"
+"assets/AssetManifest.json": "99914b932bd37a50b983c5e7c90ae93b",
+"canvaskit/canvaskit.wasm": "6972cd6e8f48c5f3c027416c7b2443a6",
+"canvaskit/canvaskit.js": "678d9f53b0e5c5f22543631f43279fb9",
+"canvaskit/profiling/canvaskit.wasm": "09aacbc0d8b20c7ee684e310703e2d86",
+"canvaskit/profiling/canvaskit.js": "5a0f05139f1d43c603dcfc67d15b1ec9",
+"version.json": "dae5d4c273ccebccb7c8db4957563aad"
 };
 
 // The application shell files that are downloaded before a service worker can
@@ -65,6 +65,8 @@ self.addEventListener("activate", function(event) {
         await caches.delete(TEMP);
         // Save the manifest to make future upgrades efficient.
         await manifestCache.put('manifest', new Response(JSON.stringify(RESOURCES)));
+        // Claim client to enable caching on first launch
+        self.clients.claim();
         return;
       }
       var oldManifest = await manifest.json();
@@ -90,6 +92,8 @@ self.addEventListener("activate", function(event) {
       await caches.delete(TEMP);
       // Save the manifest to make future upgrades efficient.
       await manifestCache.put('manifest', new Response(JSON.stringify(RESOURCES)));
+      // Claim client to enable caching on first launch
+      self.clients.claim();
       return;
     } catch (err) {
       // On an unhandled exception the state of the cache cannot be guaranteed.
