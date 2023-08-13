@@ -7,8 +7,8 @@ const RESOURCES = {"icons/Icon-maskable-512.png": "301a7604d45b3e739efc881eb0489
 "icons/Icon-maskable-192.png": "c457ef57daa1d16f64b27b786ec2ea3c",
 "icons/Icon-192.png": "ac9a721a12bbc803b44f645561ecb1e1",
 "icons/Icon-512.png": "96e752610906ba2a93c65f8abe1645f1",
-"index.html": "354a72c182acc6aced81aeb46874c5fc",
-"/": "354a72c182acc6aced81aeb46874c5fc",
+"index.html": "408f414c5c05614667776cc5db1788b0",
+"/": "408f414c5c05614667776cc5db1788b0",
 "flutter.js": "0b19a3d1d54c58174c41cd35acdd9388",
 "manifest.json": "7c948dc373c09c01a0888540d7c91bae",
 "favicon.png": "5dcef449791fa27946b3d35ad8803796",
@@ -16,17 +16,17 @@ const RESOURCES = {"icons/Icon-maskable-512.png": "301a7604d45b3e739efc881eb0489
 "assets/shaders/ink_sparkle.frag": "f8b80e740d33eb157090be4e995febdf",
 "assets/AssetManifest.bin": "0b0a3415aad49b6e9bf965ff578614f9",
 "assets/AssetManifest.json": "99914b932bd37a50b983c5e7c90ae93b",
-"assets/NOTICES": "3ec3a70bca658c44c8711d3381428120",
+"assets/NOTICES": "1f06e64516034a117e5493b83f5ceee3",
 "assets/FontManifest.json": "7b2a36307916a9721811788013e65289",
 "version.json": "dae5d4c273ccebccb7c8db4957563aad",
-"main.dart.js": "ae8fc5faebcd11eb65f6e712a71dc8e7",
+"main.dart.js": "0747af3b0dbe177854accfdffe7e6ee8",
 "canvaskit/canvaskit.js": "7c4a2df28f03b428a63fb10250463cf5",
-"canvaskit/skwasm.wasm": "7833daee1cacf363c56384e9a7506981",
+"canvaskit/skwasm.wasm": "260cc3d5524bc8822bdb06c9e0bfbc6b",
 "canvaskit/skwasm.js": "95f16c6690f955a45b2317496983dbe9",
 "canvaskit/skwasm.worker.js": "51253d3321b11ddb8d73fa8aa87d3b15",
 "canvaskit/chromium/canvaskit.js": "2236901a15edcdf16e2eaf18ea7a7415",
-"canvaskit/chromium/canvaskit.wasm": "3699c97bf8fa2d0f2d3ca56efeb66a24",
-"canvaskit/canvaskit.wasm": "77b527da2c9f0d9b997ae4e36fd621b1"};
+"canvaskit/chromium/canvaskit.wasm": "495f95d726b8eeaa40939c483f01c9a3",
+"canvaskit/canvaskit.wasm": "a7c0cda5e4bc04d6ea82f99e674e78f0"};
 // The application shell files that are downloaded before a service worker can
 // start.
 const CORE = ["main.dart.js",
