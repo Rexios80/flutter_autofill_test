@@ -6647,7 +6647,7 @@ Exhibit B - "Incompatible With Secondary Licenses" Notice
   This Source Code Form is "Incompatible With Secondary Licenses", as
   defined by the Mozilla Public License, v. 2.0.
 
-You may obtain a copy of this library's Source Code Form from: https://dart.googlesource.com/sdk/+/b735974580e7ad7461abf8175fec2fb27fc8b8e7
+You may obtain a copy of this library's Source Code Form from: https://dart.googlesource.com/sdk/+/5b812b9ec2204cf6ae1a9e8204faa22b69ce8ace
 /third_party/fallback_root_certificates/
 
 --------------------------------------------------------------------------------
@@ -31784,6 +31784,17 @@ material_color_utilities
       of your accepting any such warranty or additional liability.
 
    END OF TERMS AND CONDITIONS
+
+   APPENDIX: How to apply the Apache License to your work.
+
+   To apply the Apache License to your work, attach the following
+   boilerplate notice, with the fields enclosed by brackets "[]"
+   replaced with your own identifying information. (Don't include
+   the brackets!)  The text should be enclosed in the appropriate
+   comment syntax for the file format. We also recommend that a
+   file or class name and description of purpose be included on the
+   same "printed page" as the copyright notice for easier
+   identification within third-party archives.
 
    Copyright 2021 Google LLC
 
