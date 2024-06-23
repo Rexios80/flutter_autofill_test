@@ -5122,7 +5122,7 @@
 5121:GrSurfaceProxyPriv::exactify\28\29
 5122:GrSurfaceProxy::GrSurfaceProxy\28GrBackendFormat\20const&\2c\20SkISize\2c\20SkBackingFit\2c\20skgpu::Budgeted\2c\20skgpu::Protected\2c\20GrInternalSurfaceFlags\2c\20GrSurfaceProxy::UseAllocator\2c\20std::__2::basic_string_view<char\2c\20std::__2::char_traits<char>>\29
 5123:GrStyledShape::setInheritedKey\28GrStyledShape\20const&\2c\20GrStyle::Apply\2c\20float\29
-5124:GrStyledShape::asRRect\28SkRRect*\2c\20SkPathDirection*\2c\20unsigned\20int*\2c\20bool*\29\20const
+5124:GrStyledShape::asRRect\28SkRRect*\2c\20bool*\29\20const
 5125:GrStyledShape::GrStyledShape\28SkPath\20const&\2c\20SkPaint\20const&\2c\20GrStyledShape::DoSimplify\29
 5126:GrStyle::~GrStyle\28\29
 5127:GrStyle::applyToPath\28SkPath*\2c\20SkStrokeRec::InitStyle*\2c\20SkPath\20const&\2c\20float\29\20const
