@@ -6640,7 +6640,7 @@ kh:function kh(){},
 Gv:function Gv(){},
 K9:function K9(){},
 aDh(){var s,r,q,p,o,n,m,l,k,j=null,i=$.ar(),h=new A.xU(B.jb,i),g=new A.xU(B.jb,i),f=t.E,e=A.b([new A.tk(A.aho(A.b([A.anY(B.CX,h,B.Bl,!1),B.fP,A.anY(B.Dc,g,B.Bk,!0)],f),B.bB,B.bG,B.ip),j),B.fP,new A.EA(new A.agH(h,g),j,j,j,j,j,j,!1,j,!0,B.NH,j)],f)
-B.b.M(e,A.b([B.fP,B.NF,A.jG("Built "+A.avW(new A.e7(A.ahw(1722126503136,0,!1),0,!1))+"\n",j,j,j,j,j,j),A.axM(B.CN,B.bB,B.ip)],f))
+B.b.M(e,A.b([B.fP,B.NF,A.jG("Built "+A.avW(new A.e7(A.ahw(1722731277768,0,!1),0,!1))+"\n",j,j,j,j,j,j),A.axM(B.CN,B.bB,B.ip)],f))
 e.push(B.fP)
 e.push(B.xn)
 f=t.S
@@ -22532,7 +22532,7 @@ A.aft.prototype={
 $1(a){var s=A.d8().b
 if(s==null)s=null
 else{s=s.canvasKitBaseUrl
-if(s==null)s=null}return(s==null?"https://www.gstatic.com/flutter-canvaskit/d89dd85f25cf4a3e15465a59594f4125b7f48d39/":s)+a},
+if(s==null)s=null}return(s==null?"https://www.gstatic.com/flutter-canvaskit/6e4deceb3802049388e167e3b14fda5843ad16e6/":s)+a},
 $S:135}
 A.afE.prototype={
 $1(a){this.a.remove()
@@ -76686,7 +76686,7 @@ B.MT=new A.r(!0,B.C,null,"Roboto",B.G,null,null,null,null,null,null,null,null,nu
 B.Ml=new A.r(!0,B.m,null,"Roboto",B.G,null,null,null,null,null,null,null,null,null,null,null,null,B.e,null,null,null,"blackHelsinki labelMedium",null,null,null,null)
 B.Mv=new A.r(!0,B.m,null,"Roboto",B.G,null,null,null,null,null,null,null,null,null,null,null,null,B.e,null,null,null,"blackHelsinki labelSmall",null,null,null,null)
 B.NE=new A.dw(B.Nb,B.KT,B.LG,B.Mk,B.Mx,B.Kq,B.Lk,B.Ku,B.M8,B.MJ,B.LM,B.MK,B.MT,B.Ml,B.Mv)
-B.NF=new A.it("Flutter 3.24.0-0.1.pre \u2022 channel beta \u2022 https://github.com/flutter/flutter.git\nFramework \u2022 revision b864805a68 (4 days ago) \u2022 2024-07-23 16:06:18 -0700\nEngine \u2022 revision d89dd85f25\nTools \u2022 Dart 3.5.0 (build 3.5.0-323.1.beta) \u2022 DevTools 2.37.0\n",null,null,null,null,null,null,null,null)
+B.NF=new A.it("Flutter 3.24.0-0.2.pre \u2022 channel beta \u2022 https://github.com/flutter/flutter.git\nFramework \u2022 revision 7c6b7e9ca4 (5 days ago) \u2022 2024-07-30 14:26:44 +0700\nEngine \u2022 revision 6e4deceb38\nTools \u2022 Dart 3.5.0 (build 3.5.0-323.2.beta) \u2022 DevTools 2.37.2\n",null,null,null,null,null,null,null,null)
 B.NH=new A.it("Clear",null,null,null,null,null,null,null,null)
 B.NI=new A.it("Autofill Test",null,null,null,null,null,null,null,null)
 B.QI=new A.a7P(0,"system")
