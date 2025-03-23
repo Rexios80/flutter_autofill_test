@@ -258,9 +258,9 @@
 257:SkPath::~SkPath\28\29
 258:hb_blob_destroy
 259:std::__2::basic_string<char\2c\20std::__2::char_traits<char>\2c\20std::__2::allocator<char>>::append\28char\20const*\29
-260:SkArenaAlloc::ensureSpace\28unsigned\20int\2c\20unsigned\20int\29
-261:sk_report_container_overflow_and_die\28\29
-262:SkSL::ErrorReporter::error\28SkSL::Position\2c\20std::__2::basic_string_view<char\2c\20std::__2::char_traits<char>>\29
+260:sk_report_container_overflow_and_die\28\29
+261:SkSL::ErrorReporter::error\28SkSL::Position\2c\20std::__2::basic_string_view<char\2c\20std::__2::char_traits<char>>\29
+262:SkArenaAlloc::ensureSpace\28unsigned\20int\2c\20unsigned\20int\29
 263:ft_mem_free
 264:strcmp
 265:SkRasterPipeline::append\28SkRasterPipelineOp\2c\20void*\29

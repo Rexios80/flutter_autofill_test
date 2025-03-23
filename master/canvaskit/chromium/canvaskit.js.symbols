@@ -255,8 +255,8 @@
 254:std::__2::basic_string<char\2c\20std::__2::char_traits<char>\2c\20std::__2::allocator<char>>::append\28char\20const*\29
 255:memcmp
 256:sk_report_container_overflow_and_die\28\29
-257:SkArenaAlloc::ensureSpace\28unsigned\20int\2c\20unsigned\20int\29
-258:SkSL::ErrorReporter::error\28SkSL::Position\2c\20std::__2::basic_string_view<char\2c\20std::__2::char_traits<char>>\29
+257:SkSL::ErrorReporter::error\28SkSL::Position\2c\20std::__2::basic_string_view<char\2c\20std::__2::char_traits<char>>\29
+258:SkArenaAlloc::ensureSpace\28unsigned\20int\2c\20unsigned\20int\29
 259:ft_mem_free
 260:SkRasterPipeline::append\28SkRasterPipelineOp\2c\20void*\29
 261:SkString::SkString\28char\20const*\29
