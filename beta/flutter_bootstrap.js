@@ -19,7 +19,6 @@ eventListener = (message) => {
             dispatchEvent(message);
         }
     });
-    console.log("removing initial listener");
     removeEventListener("message", eventListener);
     eventListener = (message) => {
 
@@ -35,11 +34,11 @@ addEventListener("message", eventListener);
 if (!window._flutter) {
   window._flutter = {};
 }
-_flutter.buildConfig = {"engineRevision":"50f226569f331edf2831a7543f55d953c3d50637","builds":[{"compileTarget":"dart2js","renderer":"canvaskit","mainJsPath":"main.dart.js"}]};
+_flutter.buildConfig = {"engineRevision":"72ee26e314f471012ee4ee60b5cf1831c0ed6a45","builds":[{"compileTarget":"dart2js","renderer":"canvaskit","mainJsPath":"main.dart.js"}]};
 
 
 _flutter.loader.load({
   serviceWorkerSettings: {
-    serviceWorkerVersion: "3749134543"
+    serviceWorkerVersion: "3806170021"
   }
 });
