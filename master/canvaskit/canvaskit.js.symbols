@@ -248,8 +248,8 @@
 247:SkData::~SkData\28\29
 248:memmove
 249:SkString::SkString\28\29
-250:uprv_free_74
-251:SkContainerAllocator::allocate\28int\2c\20double\29
+250:SkContainerAllocator::allocate\28int\2c\20double\29
+251:uprv_free_74
 252:SkPath::~SkPath\28\29
 253:memcmp
 254:SkString::insert\28unsigned\20long\2c\20char\20const*\29
@@ -258,8 +258,8 @@
 257:hb_blob_destroy
 258:SkDebugf\28char\20const*\2c\20...\29
 259:uprv_malloc_74
-260:SkSL::ErrorReporter::error\28SkSL::Position\2c\20std::__2::basic_string_view<char\2c\20std::__2::char_traits<char>>\29
-261:sk_report_container_overflow_and_die\28\29
+260:sk_report_container_overflow_and_die\28\29
+261:SkSL::ErrorReporter::error\28SkSL::Position\2c\20std::__2::basic_string_view<char\2c\20std::__2::char_traits<char>>\29
 262:SkArenaAlloc::ensureSpace\28unsigned\20int\2c\20unsigned\20int\29
 263:ft_mem_free
 264:strcmp
@@ -1573,7 +1573,7 @@
 1572:SkPathRawShapes::Oval::Oval\28SkRect\20const&\2c\20SkPathDirection\2c\20unsigned\20int\29
 1573:SkPathMeasure::nextContour\28\29
 1574:SkPathMeasure::getSegment\28float\2c\20float\2c\20SkPathBuilder*\2c\20bool\29
-1575:SkPathBuilder::incReserve\28int\2c\20int\29
+1575:SkPathBuilder::incReserve\28int\2c\20int\2c\20int\29
 1576:SkPathBuilder::addRRect\28SkRRect\20const&\2c\20SkPathDirection\2c\20unsigned\20int\29
 1577:SkPath::moveTo\28float\2c\20float\29
 1578:SkPath::getPoint\28int\29\20const

@@ -1432,7 +1432,7 @@
 1431:SkPathRawShapes::Oval::Oval\28SkRect\20const&\2c\20SkPathDirection\2c\20unsigned\20int\29
 1432:SkPathMeasure::nextContour\28\29
 1433:SkPathMeasure::getSegment\28float\2c\20float\2c\20SkPathBuilder*\2c\20bool\29
-1434:SkPathBuilder::incReserve\28int\2c\20int\29
+1434:SkPathBuilder::incReserve\28int\2c\20int\2c\20int\29
 1435:SkPathBuilder::addRRect\28SkRRect\20const&\2c\20SkPathDirection\2c\20unsigned\20int\29
 1436:SkPath::moveTo\28float\2c\20float\29
 1437:SkPath::getPoint\28int\29\20const
