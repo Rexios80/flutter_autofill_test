@@ -250,8 +250,8 @@
 249:std::__2::__function::__func<GetShapedLines\28skia::textlayout::Paragraph&\29::$_0\2c\20std::__2::allocator<GetShapedLines\28skia::textlayout::Paragraph&\29::$_0>\2c\20void\20\28int\2c\20skia::textlayout::Paragraph::VisitorInfo\20const*\29>::~__func\28\29
 250:SkDebugf\28char\20const*\2c\20...\29
 251:memcmp
-252:sk_report_container_overflow_and_die\28\29
-253:SkSL::ErrorReporter::error\28SkSL::Position\2c\20std::__2::basic_string_view<char\2c\20std::__2::char_traits<char>>\29
+252:SkSL::ErrorReporter::error\28SkSL::Position\2c\20std::__2::basic_string_view<char\2c\20std::__2::char_traits<char>>\29
+253:sk_report_container_overflow_and_die\28\29
 254:SkArenaAlloc::ensureSpace\28unsigned\20int\2c\20unsigned\20int\29
 255:hb_blob_destroy
 256:SkRasterPipeline::append\28SkRasterPipelineOp\2c\20void*\29
