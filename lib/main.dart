@@ -47,8 +47,8 @@ void main() {
               Text(
                 'Built ${GetTimeAgo.parse(DateTime.fromMillisecondsSinceEpoch(kBuildDate))}\n',
               ),
-              Row(
-                children: const [
+              const Row(
+                children: [
                   Text('View app built with Flutter channel'),
                   LinkButton(label: 'stable', url: '../stable'),
                   Text('/'),

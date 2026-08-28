@@ -1,11 +1,15 @@
-/// Based on https://stackoverflow.com/a/63417082/8174191
+// Based on https://stackoverflow.com/a/63417082/8174191
 
 import 'dart:io';
 
 void main() async {
   final result = await Process.run('flutter', ['--version']);
+  final flutterInfo = result.stdout
+      .toString()
+      .replaceAll(RegExp(r'https://[^@\s]+@'), 'https://')
+      .replaceAll('\n', '\\n');
   final declarations = constantDeclarationsFromMap({
-    'flutterInfo': result.stdout.replaceAll('\n', '\\n'),
+    'flutterInfo': flutterInfo,
     'buildDate': DateTime.now().millisecondsSinceEpoch,
   }).join('\n');
   File('lib/constants.dart').writeAsStringSync(declarations);
