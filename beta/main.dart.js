@@ -7411,7 +7411,7 @@ this.b=b},
 a4A:function a4A(){},
 a9E:function a9E(){},
 aI0(){var s,r,q,p,o,n,m,l,k,j,i,h=null,g=$.ap(),f=new A.za(B.kx,g),e=new A.za(B.kx,g),d=t.J,c=A.c([new A.um(A.alr(A.c([A.asb(B.F1,f,B.D4,!1),B.ht,A.asb(B.Fr,e,B.D3,!0)],d),B.c4,B.c8,B.jL),h),B.ht,new A.G1(new A.akF(f,e),h,h,h,h,h,h,!1,h,!0,h,B.QG,h)],d)
-B.c.P(c,A.c([B.ht,B.QF,A.jY("Built "+A.aAl(new A.er(A.aly(1788065577505,0,!1),0,!1))+"\n",h,h,h,h,h,h),B.Kg],d))
+B.c.P(c,A.c([B.ht,B.QE,A.jY("Built "+A.aAl(new A.er(A.aly(1788667314160,0,!1),0,!1))+"\n",h,h,h,h,h,h),B.Kg],d))
 c.push(B.ht)
 c.push(B.yW)
 d=t.S
@@ -24503,7 +24503,7 @@ $S:2}
 A.ajE.prototype={
 $1(a){var s=A.co().b
 s=s==null?null:s.canvasKitBaseUrl
-return(s==null?"https://www.gstatic.com/flutter-canvaskit/3816f7b7a3d4c665ccf850087f39e5e931069752/":s)+a},
+return(s==null?"https://www.gstatic.com/flutter-canvaskit/e2149387c63888c6a51c8c3569dacda1c1532653/":s)+a},
 $S:140}
 A.EX.prototype={
 SL(){var s=this.a6j(),r=$.b5.bj().ImageFilter.MakeColorFilter(s,null)
@@ -82727,12 +82727,12 @@ B.h5=new A.r0(0,"pop")
 B.de=new A.r0(1,"doNotPop")
 B.wY=new A.r0(2,"bubble")
 B.yt=new A.aaU(1,"down")
-B.QE=new A.iG("View app built with Flutter channel",null,null,null,null,null,null,null,null)
+B.QF=new A.iG("View app built with Flutter channel",null,null,null,null,null,null,null,null)
 B.Do=new A.nq("stable","../stable",null)
 B.ye=new A.iG("/",null,null,null,null,null,null,null,null)
 B.Dq=new A.nq("beta","../beta",null)
 B.Dp=new A.nq("master","../master",null)
-B.FB=s([B.QE,B.Do,B.ye,B.Dq,B.ye,B.Dp],t.J)
+B.FB=s([B.QF,B.Do,B.ye,B.Dq,B.ye,B.Dp],t.J)
 B.Kg=new A.Jk(B.aX,B.c8,B.jL,B.c4,null,B.yt,null,0,B.FB,null)
 B.Kh=new A.Jn(null,null)
 B.cA=new A.ob(0,"idle")
@@ -83276,7 +83276,7 @@ B.PM=new A.t(!0,B.m,null,".AppleSystemUIFont",null,null,null,null,null,null,null
 B.Nt=new A.t(!0,B.m,null,".AppleSystemUIFont",null,null,null,null,null,null,null,null,null,null,null,null,null,B.f,null,null,null,"blackRedwoodCity labelSmall",null,null,null,null)
 B.QC=new A.dW(B.OS,B.O1,B.OT,B.Pe,B.NM,B.NT,B.Oi,B.Pa,B.Os,B.Px,B.Nm,B.NB,B.Pu,B.PM,B.Nt)
 B.QD=new A.iG("Autofill Test",null,null,null,null,null,null,null,null)
-B.QF=new A.iG("Flutter 3.48.0-0.3.pre \u2022 channel beta \u2022 https://github.com/flutter/flutter.git\nFramework \u2022 revision 87af191112 (4 days ago) \u2022 2026-08-26 09:52:51 -0700\nEngine \u2022 hash 4332addceda58e6fd8a41818f640a529fc18f11c (revision 3816f7b7a3) (5 days ago) \u2022 2026-08-24 23:09:45.000Z\nTools \u2022 Dart 3.14.0 (build 3.14.0-95.2.beta) \u2022 DevTools 2.61.0-dev.0\n",null,null,null,null,null,null,null,null)
+B.QE=new A.iG("Flutter 3.48.0-0.4.pre \u2022 channel beta \u2022 https://github.com/flutter/flutter.git\nFramework \u2022 revision e3005e3402 (3 days ago) \u2022 2026-09-02 14:26:34 -0700\nEngine \u2022 hash aff4b9780ffb288258c26c3196e66d79f9c2550f (revision e2149387c6) (5 days ago) \u2022 2026-08-31 23:16:20.000Z\nTools \u2022 Dart 3.14.0 (build 3.14.0-95.2.beta) \u2022 DevTools 2.61.0-dev.0\n",null,null,null,null,null,null,null,null)
 B.QG=new A.iG("Clear",null,null,null,null,null,null,null,null)
 B.TR=new A.aan(0,"system")
 B.Ip=new A.f(0.056,0.024)

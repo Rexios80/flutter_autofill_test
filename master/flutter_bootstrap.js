@@ -4,7 +4,7 @@ To enable multithreading, serve your app with these HTTP response headers:
   Cross-Origin-Opener-Policy: same-origin
   Cross-Origin-Embedder-Policy: require-corp
 See https://web.dev/articles/coop-coep for guidance.
-To silence this warning, set \`suppressMultithreadingWarning: true\` in your Flutter configuration.`),await a.default({skwasmSingleThreaded:e.enableWimp||!s.crossOriginIsolated||s.isChromeExtension||e.forceSingleThreadedSkwasm,instantiateWasm:l,locateFile:(u,d)=>u.endsWith(".ww.js")?URL.createObjectURL(new Blob([`
+To silence this warning, set \`suppressMultithreadingWarning: true\` in your Flutter configuration.`),await a.default({skwasmSingleThreaded:!s.crossOriginIsolated||s.isChromeExtension||e.forceSingleThreadedSkwasm,instantiateWasm:l,locateFile:(u,d)=>u.endsWith(".ww.js")?URL.createObjectURL(new Blob([`
 "use strict";
 
 let eventListener;
@@ -38,10 +38,10 @@ addEventListener("message", eventListener);
 if (!window._flutter) {
   window._flutter = {};
 }
-_flutter.buildConfig = {"engineRevision":"5360c776a7a05ec4c0ba0cd50cc92ec64efca3b8","wasmHashes":{"chromium/canvaskit.wasm":"9c2188f4cc67cf183d4811b9971e56dee1dd855cda9fbfcc01db13f631eb24eb","webparagraph/canvaskit.wasm":"139161220d0240d3040d84cbe76db5e137afd316c3eaef813f9e25da3dd68236","canvaskit.wasm":"520cb2d912d671aa7604d1a4810f6f572502991d9659630ae12a727909f3b0a9","skwasm.wasm":"8ac7fc8f35ddb15d373f8c849daae78058785e34b52ae3e877ff09a402e56268","skwasm_heavy.wasm":"bd3bcccb2c5e0ba31eca18cc5865036e6fffda60fb147ac932b8ab9889b4bb50","wimp.wasm":"5f5ed4839567ed4d42a40de99a34db2a25c60c62c8123a4746af8953d4c85dc5"},"builds":[{"compileTarget":"dart2js","renderer":"canvaskit","mainJsPath":"main.dart.js"},{}]};
+_flutter.buildConfig = {"engineRevision":"63170e984e19184b2f9b77c81a2559b7d8671114","wasmHashes":{"chromium/canvaskit.wasm":"0917399d8b31e707bccbfb23618407286358f646d3e9700ed51efd58e4baa9a9","webparagraph/canvaskit.wasm":"c3c37667943e89519a27e6ed5dad20b2412a3c67d05d142e0510bb2dd8db352f","skwasm_heavy.wasm":"9838147c3fcedb07e815eb4f058e7a9eedb504426ccc327cee6ed51a5a8db1b8","canvaskit.wasm":"c04c8a341f476a2c19a39e717b5378ed668051498f69bbe6d16519f64ce239ba","skwasm.wasm":"7d40af934306de0fe150a17219bb6adc726c7f3a944a18034ae25d9124acc850","wimp.wasm":"36ab6b28261ca2a696486793c85a6364883f3b44d8ad07f4ef46f47aa054ee2e"},"builds":[{"compileTarget":"dart2js","renderer":"canvaskit","mainJsPath":"main.dart.js"},{}]};
 
 _flutter.loader.load({
   serviceWorkerSettings: {
-    serviceWorkerVersion: "245530870" /* Flutter's service worker is deprecated and will be removed in a future Flutter release. */
+    serviceWorkerVersion: "571501945" /* Flutter's service worker is deprecated and will be removed in a future Flutter release. */
   }
 });

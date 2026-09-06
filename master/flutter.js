@@ -4,7 +4,7 @@ To enable multithreading, serve your app with these HTTP response headers:
   Cross-Origin-Opener-Policy: same-origin
   Cross-Origin-Embedder-Policy: require-corp
 See https://web.dev/articles/coop-coep for guidance.
-To silence this warning, set \`suppressMultithreadingWarning: true\` in your Flutter configuration.`),await a.default({skwasmSingleThreaded:e.enableWimp||!s.crossOriginIsolated||s.isChromeExtension||e.forceSingleThreadedSkwasm,instantiateWasm:l,locateFile:(u,d)=>u.endsWith(".ww.js")?URL.createObjectURL(new Blob([`
+To silence this warning, set \`suppressMultithreadingWarning: true\` in your Flutter configuration.`),await a.default({skwasmSingleThreaded:!s.crossOriginIsolated||s.isChromeExtension||e.forceSingleThreadedSkwasm,instantiateWasm:l,locateFile:(u,d)=>u.endsWith(".ww.js")?URL.createObjectURL(new Blob([`
 "use strict";
 
 let eventListener;
